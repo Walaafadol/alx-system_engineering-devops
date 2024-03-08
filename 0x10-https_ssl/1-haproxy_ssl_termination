@@ -41,7 +41,7 @@ frontend waaafadol-frontend
         default_backend walaafadl-backend
 
 frontend walaafadol-frontend-https
-        bind *:443 ssl crt /etc/haproxy/certs/www.walaafadol.tech.pem
+        bind *:443 ssl crt /etc/haproxy/certs/walaafadol.tech.pem
         http-request set-header X-Forwarded-Proto https
         default_backend walaafadol-backend
 
